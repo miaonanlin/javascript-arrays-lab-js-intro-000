@@ -5,20 +5,20 @@ function destructivelyAppendKitten(name){
   return kittens.push;
 }
 
-function destructivelyAppendKitten(name){
+function destructivelyPrependKitten(name){
   return kittens.unshift(name);
 }
 
-function destructivelyAppendKitten(){
+function destructivelyRemoveLastKitten(){
   return kittens.pop();
 }
 
-function destructivelyAppendKitten(){
+function destructivelyRemoveFirstKitten(){
   return kittens.shift();
 }
 
 
-function appendKitten(name){
+function prependKitten(name){
   return [name, ...kittens];
 }
 
