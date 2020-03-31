@@ -17,13 +17,16 @@ function destructivelyAppendKitten(){
   return kittens.shift();
 }
 
-function appendKitten(name){
-  return [...kittens, name];
-}
 
 function appendKitten(name){
   return [name, ...kittens];
 }
+
+function appendKitten(name){
+  return [...kittens, name]
+}
+
+
 
 function removeLastKitten(){
   return kittens.slice(0,kittens.length-1);
