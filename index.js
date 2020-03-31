@@ -2,12 +2,11 @@ var kittens = ["Milo","Otis","Garfield"]
  //define your array here
 // Add your functions and code here
 function destructivelyAppendKitten(name){
-  kittens.push(name)
-  return kittens;
+  return kittens.push
 }
 
 function destructivelyAppendKitten(name){
-  return kittens.inshift(name)
+  return kittens.unshift(name)
 }
 
 function destructivelyAppendKitten(){
@@ -28,4 +27,8 @@ function appendKitten(name){
 
 function removeLastKitten(){
   return kittens.slice(0,kittens.length-1)
+}
+
+function removeLastKitten(){
+  return kittens.slice(1)
 }
